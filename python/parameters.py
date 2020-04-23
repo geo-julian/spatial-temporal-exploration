@@ -7,7 +7,7 @@ parameters = {
     
     #the file which contains the seed points.
     #coregistration input file 
-    'input_file' : 'coregistration_input_data_NA_269.csv', #File with all the NA data points of mineral occurrences
+    'input_file' : 'coregistration_input_data_example_155.csv',
     
     #folder contains the coregistration output files.
     'output_dir' : 'coreg_output',
@@ -24,9 +24,11 @@ parameters = {
     #the distance is in degrees. 
     "regions" : [5, 10],
     
-    "rotation_files" : ["../data/Global_EarthByte_230-0Ma_GK07_AREPS.rot"],
-    "topology_files" : ["../data/Global_EarthByte_230-0Ma_GK07_AREPS_PlateBoundaries.gpml.gz",  
-            "../data/Global_EarthByte_230-0Ma_GK07_AREPS_Topology_BuildingBlocks.gpml.gz"],
+    #"rotation_files" : ["../data/2019_v3/Global_250-0Ma_Rotations_2019_v3.rot"],
+    #"topology_files" : ["../data/2019_v3/Global_Mesozoic-Cenozoic_PlateBoundaries_2019_v3.gpmlz"],  
+    
+    "rotation_files" : ["../data/2019_v2_Clennett/*.rot"],
+    "topology_files" : ["../data/2019_v2_Clennett/*.gpml"],  
     
     #the following two parameters are used by subduction_convergence
     #see https://github.com/EarthByte/PlateTectonicTools/blob/master/ptt/subduction_convergence.py
